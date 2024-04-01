@@ -1,0 +1,110 @@
+*{
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #034c99; /* Blue background color */
+    color: #fff; /* White text color */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+}
+
+.options button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
+}
+.search-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.search-holder {
+    width: 350px;
+}
+
+.advanced-search {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search {
+    display: flex;
+    gap: 0.5rem;
+    color: #034c99; /* Blue text color */
+    font-style: italic;
+}
+
+.quick-links {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif; /* Set font family */
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #034c99; /* Blue text color */
+}
+
+.logo>img {
+    width: 38px;
+    height: 57px;
+}
+
+.nav-text{
+    display: flex;
+    gap: 3rem;
+    padding: 0.3rem 0.1rem;
+    font-family: Arial, sans-serif;
+}
+
+.user-logo{
+    width: 60px;
+    height: 40px;
+    border-radius: 100%;
+}

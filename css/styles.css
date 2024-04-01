@@ -108,3 +108,8 @@
     height: 40px;
     border-radius: 100%;
 }
+
+.card{
+    margin-right: 35px;
+    margin-bottom: 35px;
+}

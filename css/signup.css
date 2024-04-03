@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 300px;
+    max-width: 40vw;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -23,7 +23,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.signup-form {
+.signupform {
     display: flex;
     flex-direction: column;
 }
@@ -32,15 +32,34 @@ label {
     margin-bottom: 10px;
 }
 
+
+
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="tel"]{
     padding: 10px;
     margin-bottom:0px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
+.education{
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    margin-right: 4px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -54,3 +73,11 @@ button:hover {
     background-color: #0056b3;
 }
 
+.education-aftermath{
+    /* display:none; */
+}
+
+#education-aftermath-sub{
+    border:none;
+    pointer-events: none;
+}

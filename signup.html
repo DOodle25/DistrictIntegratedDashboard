@@ -3,23 +3,73 @@
 <head>
     <title>Signup Page</title>
     <link rel="stylesheet" href="css/signup.css">
+    <script src="js/signup.js"></script>
 </head>
 <body>
     <h1>Signup</h1>
     <div class="container">
-    <form action="submit.php" method="POST" class="signup-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+    <form class="signupform" name="signupform" onsubmit="education_validation()">
+        <h3>Account information:</h3>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores." ><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+        <label for="email">E-mail address:</label>
+        <input type="email" id="email" name="email" placeholder="A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.Personal Information" ><br>
         
+        <h3>Personal information:</h3>
+        <label for="username">Firstname:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="First name" ><br>
+
+        <label for="username">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last name" ><br>
+
+        <div style="display: flex;">
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" >
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" >
+            <label for="female">Female</label><br>
+        </div>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" ><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" ><br>
+
+        <label for="education">Education:</label>
+        <select class="education" id="education" name="education" onchange="education_validation()">
+            <option value="Graduate/Post Graduate-Professional">Graduate/Post Graduate-Professional</option>
+            <option value="Graduate/Post Graduate-General">Graduate/Post Graduate-General</option>
+            <option value="Vocational">Vocational</option>
+            <option value="Higher Secondary Education">Higher Secondary Education</option>
+            <option value="Secondary Education">Secondary Education</option>
+            <option value="Elementary Education">Elementary Education</option>
+        </select><br>
+        <input type="text" id="education-aftermath-sub" name="educationaftermathsub" style="width: 100%;"><br>
+        <br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" ><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" ><br>
+        
+        
+        
+        <label for="identification">Identification Code:</label>
+        <input type="text" id="identification" name="identification" ><br>
+
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
+        <input type="password" id="password" name="password" placeholder="Type pasword" ><br>
+        
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Retype pasword" ><br>
         
         <button type="submit">Signup</button>
-        
-    </div>
     </form>
+    </div>
 </body>
 </html>

@@ -139,8 +139,8 @@ header{
 
 .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-right: 40px;
-    margin-top: 40px;
+    margin-right: 45px;
+    margin-top: 45px;
     transform: scale(1.05); /* Scale the hovered card */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -148,9 +148,9 @@ header{
 
 }
 
-.card-text{
-    display: none;
-}
+/* .card-text{
+    display: ;
+} */
 
 .btn btn-primary{
 
@@ -160,3 +160,88 @@ header{
     padding: 0 30px;
 } */
 
+
+
+
+
+
+
+
+
+
+/* hidden signup  */
+/* 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+} */
+
+.hidden-signup-container {
+    max-width: 40vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-signup-container.h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hidden-signup-signupform {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+
+
+.in-in{
+    padding: 10px;
+    margin-bottom:0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.education{
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+}
+
+.rad-rad {
+    margin-right: 4px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.but-ton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.but-ton:hover {
+    background-color: #0056b3;
+}
+
+.education-aftermath{
+    display:none;
+}
+
+.education-aftermath{
+    border:none;
+    pointer-events: none;
+}

@@ -34,6 +34,22 @@ header{
     border: none;
     cursor: pointer;
 }
+.options-down {
+    gap: 1rem;
+}
+
+.options-down button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+}
+.nav-text{
+    padding-left : 0;
+}
+.dropdown-down-menu{
+    display: none;
+}
 
 .dropdown {
 }
@@ -55,6 +71,8 @@ header{
 .dropdown-menu a {
     text-decoration: none;
 }
+
+
 
 .search-bar {
     display: flex;
@@ -120,7 +138,8 @@ header{
 
 .card{
     margin-right: 35px;
-    margin-top: 35px;
+    margin-top: 17px;
+    margin-bottom: 17px;
     
 }
 
@@ -244,4 +263,9 @@ body {
 .education-aftermath{
     border:none;
     pointer-events: none;
+}
+
+
+.d-flex{
+    background-color: ;
 }
